@@ -1,4 +1,4 @@
-:flag-br: # SlideMaker 
+# SlideMaker :flag-br:
 
 SlideMaker é uma aplicação desenvolvida com React e Vite para ajudar os usuários a criar slides de letras de músicas de forma rápida e fácil.
 
@@ -36,12 +36,11 @@ node server.js`
 - Cheerio
 - PptxGenJS
 
-**Nota**: O projeto atualmente funciona apenas com links de letras do site https://www.letras.mus.br/. Insira um link de uma letra deste site e clique em "Gerar Slide".
-
-
-
-
-:flag-gb: # SlideMaker
+**Nota**: O projeto atualmente funciona apenas com links de letras do site https://www.letras.mus.br/. Insira um link de uma letra deste site e clique em "Gerar Slide".  
+  
+    
+    
+# SlideMaker :flag-gb:
 
 SlideMaker is an application developed with React and Vite to help users create song lyrics slides quickly and easily.
 
