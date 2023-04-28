@@ -12,7 +12,8 @@ const InputForm = ({ selectedTheme }) => {
         console.log(`Generate button clicked with URL: ${url} and theme: ${selectedTheme}`);
     
         try {
-          const proxyUrl = `http://localhost:3001/api/scrape?url=${encodeURIComponent(url)}`;
+          //const proxyUrl = `http://localhost:3001/api/scrape?url=${encodeURIComponent(url)}`;
+          const proxyUrl = '/api/scrape?url=' + encodeURIComponent(url)
           const response = await axios.get(proxyUrl);
           const $ = cheerio.load(response.data);
     
