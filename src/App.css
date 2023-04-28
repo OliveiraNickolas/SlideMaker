@@ -4,13 +4,20 @@
   font-family: 'Product Sans', sans-serif;
 }
 
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding: 0 16px; /* Adicione um pequeno padding lateral */
+  padding: 0 16px;
+  /* Adicione um pequeno padding lateral */
 }
 
 .title-container {
@@ -18,26 +25,31 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap; /* Permite que os itens sejam ajustados em várias linhas */
-  gap: 8px; /* Espaçamento entre o texto e a imagem */
+  flex-wrap: wrap;
+  /* Permite que os itens sejam ajustados em várias linhas */
+  gap: 8px;
+  /* Espaçamento entre o texto e a imagem */
 }
 
 .page-title {
   font-size: 65px;
   font-weight: bold;
   margin-bottom: 20px;
-  text-align: center; /* Centralize o texto */
+  text-align: center;
+  /* Centralize o texto */
 }
 
 @media (max-width: 768px) {
   .page-title {
-    font-size: 48px; /* Reduza o tamanho da fonte para dispositivos menores */
+    font-size: 48px;
+    /* Reduza o tamanho da fonte para dispositivos menores */
   }
 }
 
 @media (max-width: 480px) {
   .page-title {
-    font-size: 36px; /* Reduza ainda mais o tamanho da fonte para dispositivos muito pequenos */
+    font-size: 36px;
+    /* Reduza ainda mais o tamanho da fonte para dispositivos muito pequenos */
   }
 }
 
@@ -47,6 +59,20 @@
   vertical-align: middle;
 }
 
+.footer-text {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
 
+.footer-text-wrapper {
+  display: flex;
+  align-items: center;
+}
 
-
+.github-icon {
+  margin-left: 5px;
+}
