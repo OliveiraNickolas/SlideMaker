@@ -1,4 +1,4 @@
-# SlideMaker
+# SlideMaker 🟢🟡
 
 SlideMaker é uma aplicação desenvolvida com React e Vite para ajudar os usuários a criar slides de letras de músicas de forma rápida e fácil.
 
@@ -40,7 +40,7 @@ node server.js`
 
 __________________________________________________________________________
     
-# SlideMaker :gb: 
+# SlideMaker 🔵🔴
 
 SlideMaker is an application developed with React and Vite to help users create song lyrics slides quickly and easily.
 
