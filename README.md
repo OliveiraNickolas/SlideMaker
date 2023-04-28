@@ -29,15 +29,6 @@ node server.js`
 
 5. Abra seu navegador e acesse http://localhost:3000. Agora você pode começar a usar o SlideMaker!
 
-## Ou...
-
-1. No terminal, navegue até a pasta do projeto e inicie o servidor backend:
-
-`cd SlideMaker
-node server.js`
-
-2. Acesse https://superb-melomakarona-0e1c71.netlify.app/. Agora você pode começar a usar o SlideMaker!
-
 ## Tecnologias utilizadas
 - React
 - Vite
@@ -79,15 +70,6 @@ node server.js`
 
 
 5. Open your browser and access http://localhost:3000. Now you can start using SlideMaker!
-
-## Or...
-
-1. In terminal, navigate to the project folder and start the backend server:
-
-`cd SlideMaker
-node server.js`
-
-2. Go to https://superb-melomakarona-0e1c71.netlify.app/. Now you can start using SlideMaker!
 
 ## Technologies used
 - React
