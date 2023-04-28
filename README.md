@@ -31,7 +31,12 @@ node server.js`
 
 ## Ou...
 
-- Acesse https://superb-melomakarona-0e1c71.netlify.app/
+1. No terminal, navegue até a pasta do projeto e inicie o servidor backend:
+
+`cd SlideMaker
+node server.js`
+
+2. Acesse https://superb-melomakarona-0e1c71.netlify.app/. Agora você pode começar a usar o SlideMaker!
 
 ## Tecnologias utilizadas
 - React
@@ -77,7 +82,12 @@ node server.js`
 
 ## Or...
 
-- Go to https://superb-melomakarona-0e1c71.netlify.app/
+1. In terminal, navigate to the project folder and start the backend server:
+
+`cd SlideMaker
+node server.js`
+
+2. Go to https://superb-melomakarona-0e1c71.netlify.app/. Now you can start using SlideMaker!
 
 ## Technologies used
 - React
