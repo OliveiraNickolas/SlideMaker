@@ -1,6 +1,6 @@
 # SlideMaker 🟢🟡
 
-SlideMaker é uma aplicação desenvolvida com React e Vite para ajudar os usuários a criar slides de letras de músicas de forma rápida e fácil.
+SlideMaker é uma aplicação desenvolvida com React e Vite que permite que os usuários criem slides de letras de músicas com facilidade e rapidez. Com ela, é possível gerar slides em formato PPTX a partir apenas do link da letra. 
 
 ## Requisitos
 - Node.js (versão 14 ou superior)
@@ -42,7 +42,7 @@ __________________________________________________________________________
     
 # SlideMaker 🔵🔴
 
-SlideMaker is an application developed with React and Vite to help users create song lyrics slides quickly and easily.
+SlideMaker is an application developed with React and Vite that allows users to create slides of song lyrics quickly and easily. With it, you can generate PPTX format slides from just the song's link.
 
 ## Requirements
 - Node.js (version 14 or higher)
