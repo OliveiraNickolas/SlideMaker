@@ -5,7 +5,7 @@ import pptxgen from 'pptxgenjs';
 import './InputForm.css';
 
 const InputForm = ({ selectedTheme }) => {
-
+    const [inputValue, setInputValue] = useState('');
         
     const handleGenerateClick = async () => {
         const url = document.querySelector('.search-input').value;
@@ -42,26 +42,37 @@ const InputForm = ({ selectedTheme }) => {
           verseSlide.addText(verse, { x: 0.295, y: 0.16, w: 9.6, h: 5.12, fontFace: 'Arial', fontSize: 35, color: textColor, align: 'center', bold: true });
         });
     
-        pptx.writeFile({ fileName: `${title}-${author}.pptx` });
-      };          
+        pptx.writeFile({ fileName: `${title} - ${author}.pptx` });
+      };
+      
+      const handlePasteOrClear = () => {
+        if (inputValue === '') {
+          navigator.clipboard.readText().then((text) => setInputValue(text));
+        } else {
+          setInputValue('');
+        }
+      };
     
     
-    return (
+      return (
         <div className="input-form">
-
-            <input 
-            type="text" 
-            placeholder="Cole o link da letra, escolha o tema e seja feliz 🎉" 
-            className="search-input" 
+          <div className="input-container">
+            <input
+              type="text"
+              placeholder="Cole o link da letra, escolha o tema e seja feliz 🎉"
+              className="search-input"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
             />
-
-            <button 
-            type="button" 
-            onClick={handleGenerateClick} 
-            className="search-button">Gerar Slide</button>
-
+            <button type="button" onClick={handlePasteOrClear} className="clear">
+              {inputValue === '' ? '📋' : '✖️'}
+            </button>
+          </div>
+          <button type="button" onClick={handleGenerateClick} className="generate-button">
+            Gerar Slide
+          </button>
         </div>
-    );
+      );
 };
 
 export default InputForm;
