@@ -12,14 +12,13 @@ const InputForm = ({ selectedTheme }) => {
         console.log(`Generate button clicked with URL: ${url} and theme: ${selectedTheme}`);
     
         try {
-          //const proxyUrl = `http://localhost:3001/api/scrape?url=${encodeURIComponent(url)}`;
-          const proxyUrl = '/api/scrape?url=' + encodeURIComponent(url)
+          const proxyUrl = `http://localhost:3001/api/scrape?url=${encodeURIComponent(url)}`;
           const response = await axios.get(proxyUrl);
           const $ = cheerio.load(response.data);
     
-          const title = $('.cnt-head_title h1').text().trim();
-          const author = $('.cnt-head_title h2 span').text().trim();
-          const verses = $('div.cnt-letra p').toArray().map(verse => $(verse).html().trim().replace(/<br\s?\/?>/g, '\n'));
+          const title = $('.head-title').text().trim();
+          const author = $('.head-subtitle span').text().trim();
+          const verses = $('.lyric-original p').toArray().map(verse => $(verse).html().trim().replace(/<br\s?\/?>/g, '\n'));
     
           createSlides(title, author, verses, selectedTheme);
         } catch (error) {
