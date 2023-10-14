@@ -33,8 +33,8 @@ const InputForm = ({ selectedTheme }) => {
     
         const titleSlide = pptx.addSlide();
         titleSlide.background = { color: bgColor };
-        titleSlide.addText(title, { x: 0.295, y: 1.5, h: 0.45, w: 9.45, fontFace: 'Arial', fontSize: 40, color: textColor, bold: true, align: 'center' });
-        titleSlide.addText(author, { x: 0.295, y: 2.5, h: 0.4, w: 9.45, fontFace: 'Arial', fontSize: 32, color: textColor, align: 'center', italic: true });
+        titleSlide.addText(title, { x: 0.295, y: 1.5, h: 0.45, w: 9.45, fontFace: 'Arial', fontSize: 45, color: textColor, bold: true, align: 'center' });
+        titleSlide.addText(author, { x: 0.295, y: 2.5, h: 0.4, w: 9.45, fontFace: 'Arial', fontSize: 39, color: textColor, align: 'center', italic: true });
     
         verses.forEach((verse) => {
           const verseSlide = pptx.addSlide();
@@ -59,7 +59,7 @@ const InputForm = ({ selectedTheme }) => {
           <div className="input-container">
             <input
               type="text"
-              placeholder="Cole o link da letra, escolha o tema e seja feliz 🎉"
+              placeholder="Cole o link da letra, escolha o tema e pronto! 🎉"
               className="search-input"
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
