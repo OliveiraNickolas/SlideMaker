@@ -16,8 +16,8 @@ const InputForm = ({ selectedTheme }) => {
           const response = await axios.get(proxyUrl);
           const $ = cheerio.load(response.data);
     
-          const title = $('.head-title').text().trim();
-          const author = $('.head-subtitle span').text().trim();
+          const title = $('.textStyle-primary').text().trim();
+          const author = $('.textStyle-secondary').text().trim();
           const verses = $('.lyric-original p').toArray().map(verse => $(verse).html().trim().replace(/<br\s?\/?>/g, '\n'));
     
           createSlides(title, author, verses, selectedTheme);
